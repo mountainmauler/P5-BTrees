@@ -2,11 +2,13 @@
 ### 'Project 5 - B-Trees' current progress...
 
 - [X] Create all base classes that will be used in the program
+- [ ] Write the code for the Node class as well as the derived Index and Leaf classes
+  - Allow for splitting Leaf and Index nodes to insert a value if needed when the *'M-arity' **M** value* is surpassed
+  - Properly sort and store the values in each Node based object (Index rows of M and Leaf columns of M)
 - [ ] Write the code for the BTree class
   - Use recursion when it is practical and simplifies the code of any of BTree's methods
   - Other data structures -- List, Stack, Queue, PriorityQueue, ... -- can be used if it is needed
    - [ ] Adding values
-     - Allow for splitting Leaf and Index nodes to insert a value if needed
    - [ ] Displaying the B-Tree
      - Display as a Pre-Order traversal -- parent node before the child
    - [ ] Gathering statistics
