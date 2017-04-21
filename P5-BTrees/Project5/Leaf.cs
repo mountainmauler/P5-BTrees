@@ -17,6 +17,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Project5 {
-    class Leaf {
+    class Leaf : Node {
+
     }
 }

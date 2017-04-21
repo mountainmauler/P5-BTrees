@@ -18,5 +18,29 @@ using System.Threading.Tasks;
 
 namespace Project5 {
     class BTree {
-    }
+        /// <summary>
+        /// The 'M' value in a 'M-ary' tree.
+        /// </summary>
+        public byte Arity { get; set; }
+
+        /// <summary>
+        /// The 'M-ary' B-Tree which is made up of a list of indexes -- each index contains a list of nodes which
+        ///  also can or cannot be indexes as well.
+        /// </summary>
+        public List<Index> Tree { get; private set; }
+
+        /// <summary>
+        /// Default constructor for the <see cref="BTree"/> class.
+        /// </summary>
+        public BTree() {
+        }//end BTree()
+
+        /// <summary>
+        /// Parameterized constructor for the <see cref="BTree"/> class. Sets the 'arity' of the new B-Tree.
+        /// </summary>
+        /// <param name="m">The 'arity' -- 'M-ary' M value -- of the new tree.</param>
+        public BTree(byte m) {
+            Arity = m;              //Arity is set to passed value m
+        }//end BTree(byte)
+    }//end BTree
 }

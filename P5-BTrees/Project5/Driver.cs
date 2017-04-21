@@ -17,7 +17,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Project5 {
+    /// <summary>
+    /// The driver for the 'Project 5 - B-Trees' assignment.
+    /// </summary>
     static class Driver {
+        /// <summary>
+        /// Used to generate all random numbers needed in the entire program.
+        /// </summary>
+        private static Random Rand = new Random();
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
