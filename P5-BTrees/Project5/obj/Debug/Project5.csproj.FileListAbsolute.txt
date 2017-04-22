@@ -1,3 +1,10 @@
 D:\Visual_Studio_Workspace\Projects\Project5\Project5\bin\Debug\Project5.exe.config
-D:\Visual_Studio_Workspace\Projects\P5-BTrees\Project5\bin\Debug\Project5.exe.config
 D:\Visual_Studio_Workspace\Projects\P5-BTrees\Project5\bin\Debug\P5-BTrees.exe.config
+D:\Visual_Studio_Workspace\Projects\P5-BTrees\Project5\bin\Debug\P5-BTrees.exe
+D:\Visual_Studio_Workspace\Projects\P5-BTrees\Project5\bin\Debug\P5-BTrees.pdb
+D:\Visual_Studio_Workspace\Projects\P5-BTrees\Project5\obj\Debug\Project5.csprojResolveAssemblyReference.cache
+D:\Visual_Studio_Workspace\Projects\P5-BTrees\Project5\obj\Debug\Project5.BTreeMenuForm.resources
+D:\Visual_Studio_Workspace\Projects\P5-BTrees\Project5\obj\Debug\Project5.Properties.Resources.resources
+D:\Visual_Studio_Workspace\Projects\P5-BTrees\Project5\obj\Debug\Project5.csproj.GenerateResource.Cache
+D:\Visual_Studio_Workspace\Projects\P5-BTrees\Project5\obj\Debug\P5-BTrees.exe
+D:\Visual_Studio_Workspace\Projects\P5-BTrees\Project5\obj\Debug\P5-BTrees.pdb

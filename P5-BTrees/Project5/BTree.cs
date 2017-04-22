@@ -19,28 +19,43 @@ using System.Threading.Tasks;
 namespace Project5 {
     class BTree {
         /// <summary>
-        /// The 'M' value in a 'M-ary' tree.
+        /// The number of all nodes that are currently in the B-Tree.
         /// </summary>
-        public byte Arity { get; set; }
+        public int NodeCount { get; set; }
+        /// <summary>
+        /// The number of index nodes that are currently in the B-Tree.
+        /// </summary>
+        public int IndexCount { get; set; }
+        /// <summary>
+        /// The number of leaf nodes that are currently in the B-Tree. 
+        /// </summary>
+        public int LeafCount { get; set; }
+        /// <summary>
+        /// The node size value, or 'arity', corresponding to the 'M' in this 'M-ary' tree.
+        /// </summary>
+        public int NodeSize { get; set; }
+        /// <summary>
+        /// The root node of the B-Tree.
+        /// </summary>
+        public Node RootNode { get; set; }
+        /// <summary>
+        /// A list of the index nodes that are currently in the B-Tree.
+        /// </summary>
+        public List<Index> TreeIndex { get; set; }
+        /// <summary>
+        /// A list of the leaf nodes that are currently in the B-Tree.
+        /// </summary>
+        public List<Leaf> TreeLeaf { get; set; }
 
         /// <summary>
-        /// The 'M-ary' B-Tree which is made up of a list of indexes -- each index contains a list of nodes which
-        ///  also can or cannot be indexes as well.
+        /// Parameterized constructor for the <see cref="BTree"/> class.
         /// </summary>
-        public List<Index> Tree { get; private set; }
-
-        /// <summary>
-        /// Default constructor for the <see cref="BTree"/> class.
-        /// </summary>
-        public BTree() {
-        }//end BTree()
-
-        /// <summary>
-        /// Parameterized constructor for the <see cref="BTree"/> class. Sets the 'arity' of the new B-Tree.
-        /// </summary>
-        /// <param name="m">The 'arity' -- 'M-ary' M value -- of the new tree.</param>
-        public BTree(byte m) {
-            Arity = m;              //Arity is set to passed value m
-        }//end BTree(byte)
+        /// <param name="max">The size of each node in the B-Tree.</param>
+        public BTree(int max) {
+            NodeSize = max;                 //Size is set to passed value 'max'
+            RootNode = new Node(NodeSize);  //RootNode is set to a new node of the set maximum node size
+            TreeIndex = null;               //TreeIndex is set to null
+            TreeLeaf = null;                //TreeLeaf is set to null
+        }//end BTree(int)
     }//end BTree
 }
